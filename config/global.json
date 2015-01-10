@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "1m2": {
+            "applicationId": "r1E44FziLiTfHEkezUCT1gUylk0TRwbUJBABaNzq", 
+            "masterKey": "K8gJuv7WqAr3hBmimAGg5QMk9VunSNd1vAgryC13"
+        }, 
+        "_default": {
+            "link": "1m2"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.1"
+    }
+}
