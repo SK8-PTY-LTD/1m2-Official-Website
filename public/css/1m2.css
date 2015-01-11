@@ -1,3 +1,69 @@
+/*Validated styles*/
+header {
+  padding: 100px;
+}
+
+.intro-img {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+@media(min-height: 768px) {
+  
+    .intro-image {
+        margin-top: 180px;
+        margin-bottom: 80px;
+    }
+}
+
+.section-img {
+  margin-bottom: 60px;
+}
+
+section#about {
+     background-image: url(../img/about-us-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section#services {
+  background-image: url(../img/service-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section#portfolio {
+    background-color: #f7f7f7;
+}
+
+section#quote {
+    background-image: url(../img/quote-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section#contact {
+    background-image: url(../img/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 .text-muted {
     color: #000;
     font-size: 1.2em;
@@ -32,59 +98,13 @@
     padding: 0;
 }
 
-#portfolio .portfolio-item img {
-}
-
-.about-section {
-	background-image: url(../img/about-us-bg.jpg);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.services-section {
-	background-image: url(../img/service-bg.jpg);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-section#quote {
-    background-image: url(../img/quote-bg.jpg);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.form-control {
-	  background-color: rgb(255, 255, 255ß);
-    height: 60px;
-}
-
-section#contact {
-    background-color: #222;
-	  background-image: url(../img/contact-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#contactForm {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 #quoteForm {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.input-lg {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .copyright {
@@ -111,31 +131,11 @@ section#contact {
 }
 
 .mouse-over img {
-    margin-bottom: 80px;
     height: 40px;
 }
 
 .mouse-over-black img {
-    margin-bottom: 80px;
     height: 40px;
-}
-
-.intro-image {
-    margin-top: 40px;
-    margin-bottom: 80px;
-    width: 100%;
-}
-
-.about-div {
-    padding: 150px 0 0 0;
-}
-
-@media(min-height: 768px) {
-
-    .intro-image {
-        margin-top: 180px;
-        margin-bottom: 80px;
-    }
 }
 
 @media(min-width:768px) {
@@ -157,9 +157,32 @@ section#contact {
     }
 }
 
-#contact-table tr {
-    display: block;
-    color: #fff;
+#submit-section {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px;
+  padding: 0px;
+  height: 244px;
+}
+
+#submit-section .col-md-9 .col-sm-3{
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  height: 244px;
+}
+
+#submit-section button {
+  width: 90%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 196px;
+}
+
+#submit-section textarea {
+  background-color: transparent;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 196px;
 }
 
 @media(min-width:768px) {

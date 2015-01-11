@@ -10,11 +10,11 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviourg
             // get values from FORM
-            var name = $("input#name").val();
-            var companyName = $("input#companyName").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var name = $("input#quoteName").val();
+            var companyName = $("input#quoteCompanyName").val();
+            var email = $("input#quoteEmail").val();
+            var phone = $("input#quotePhoneNumber").val();
+            var message = $("textarea#projectDetails").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {

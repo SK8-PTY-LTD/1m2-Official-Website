@@ -749,14 +749,6 @@ section#quote .form-group textarea {
     padding: 20px;
 }
 
-section#quote .form-group input.form-control {
-    height: 40px;
-}
-
-section#quote .form-group textarea.form-control {
-    height: 244px;
-}
-
 section#quote .form-control:focus {
     border-color: #00a599;
     box-shadow: none;
@@ -766,28 +758,28 @@ section#quote::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #fff;
 }
 
 section#quote:-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #fff;
 }
 
 section#quote::-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #fff;
 }
 
 section#quote:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #fff;
 }
 
 section#quote .text-danger {
@@ -815,7 +807,8 @@ footer ul.quicklinks {
 }
 
 ul.social-buttons {
-    margin-bottom: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 ul.social-buttons li a {
@@ -827,7 +820,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    background-color: #bdbdbd;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
