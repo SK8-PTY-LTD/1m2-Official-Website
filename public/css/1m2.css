@@ -1,7 +1,4 @@
 /*Validated styles*/
-header {
-  padding: 100px;
-}
 
 .intro-img {
     margin-top: 120px;
@@ -9,7 +6,6 @@ header {
 }
 
 @media(min-height: 768px) {
-  
     .intro-image {
         margin-top: 180px;
         margin-bottom: 80px;
@@ -139,19 +135,15 @@ section#contact {
 }
 
 @media(min-width:768px) {
-
     .mouse-over {
         margin-top: 50px;
     }
-
     .mouse-over img {
         height: 60px;
     }
-
     .mouse-over-black {
         margin-top: 50px;
     }
-
     .mouse-over-black img {
         height: 60px;
     }
@@ -296,3 +288,316 @@ section#contact {
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJTdGNerWpg2Hn6A-BxWgZ_I.ttf) format('truetype');
 }
 
+
+html, body {
+    min-height: 100%
+}
+
+header {
+  min-height: 800px;
+}
+
+.full-height {
+    min-height: 100%
+}
+
+.body-fullpage {
+    margin: 0;
+    background: #000;
+}
+
+#drag-knot {
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+@-webkit-keyframes drag-bounce {
+    0% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    10% {
+        -webkit-transform: translateX(22px);
+        transform: translateX(22px)
+    }
+    20% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    30% {
+        -webkit-transform: translateX(22px);
+        transform: translateX(22px)
+    }
+    100%,
+    40% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+}
+@keyframes drag-bounce {
+    0% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    10% {
+        -webkit-transform: translateX(22px);
+        transform: translateX(22px)
+    }
+    20% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+    30% {
+        -webkit-transform: translateX(22px);
+        transform: translateX(22px)
+    }
+    100%,
+    40% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+}
+@-webkit-keyframes drag-line {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 10px 0
+    }
+}
+@keyframes drag-line {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 10px 0
+    }
+}
+
+.centerer,
+.cuts-list .knife,
+.premium-nectar-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.component-drag-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.component-drag-control.is-vertical {
+    width: 3px
+}
+.component-drag-control.manual-position {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    top: 0;
+    left: 0
+}
+.drag-bounds {
+    position: relative;
+    height: 2px
+}
+.drag-bounds .line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: 59px;
+    margin-right: 29px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, .8) 80%);
+    background-position: right 0;
+    background-size: 10px 2px
+}
+.view-intro .drag-bounds .line {
+    background-position: 0 0;
+    -webkit-animation: drag-line 500ms infinite linear forwards;
+    animation: drag-line 500ms infinite linear forwards
+}
+.is-vertical .drag-bounds {
+    height: 260px
+}
+.is-vertical .drag-bounds .line {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    margin: 60px 0 0;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to top, rgba(240, 74, 74, 0) 40%, rgba(240, 74, 74, .8) 40%);
+    background-size: 3px 10px;
+    background-position: left bottom
+}
+.drag-knob {
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    top: 0;
+    left: 0
+}
+.drag-knob .dashed-border {
+    position: absolute;
+    height: 106px;
+    width: 106px;
+    left: 1px;
+    top: 1px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition-duration: 200ms;
+    transition-property: width, height, opacity
+}
+.drag-knob .dashed-border svg {
+    height: 100%;
+    width: 100%;
+    transition-duration: 200ms;
+    fill: #fff
+}
+.drag-knob .arrow {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    font: 0/0 serif;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #00a599;
+    border-right: 0;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-animation: drag-bounce 1800ms infinite forwards;
+    animation: drag-bounce 1800ms infinite forwards
+}
+.drag-knob .icon-glove-grab,
+.drag-knob .icon-glove-grabbing {
+    height: 3rem;
+    width: 3rem;
+    margin-top: -2px;
+    background-size: contain
+}
+.drag-knob .icon-glove-grab svg,
+.drag-knob .icon-glove-grabbing svg {
+    height: 100%;
+    width: 100%;
+    fill: #fff
+}
+.drag-knob .icon-glove-grabbing {
+    display: none
+}
+.no-touchdevice .drag-knob:hover .dashed-border {
+    height: 118px;
+    width: 118px
+}
+.no-touchdevice .drag-knob:hover .dashed-border svg {
+    fill: #f04a4a
+}
+.is-vertical .drag-knob .arrow {
+    display: none
+}
+.drag-knob.is-dragging .dashed-border {
+    height: 98px;
+    width: 98px
+}
+.drag-knob.is-dragging .dashed-border svg {
+    fill: #fff
+}
+.drag-knob.is-dragging .icon-glove-grab {
+    display: none
+}
+.drag-knob.is-dragging .icon-glove-grabbing {
+    display: block
+}
+.is-dragged-full .drag-knob .dashed-border {
+    height: 106px!important;
+    width: 106px!important
+}
+.is-dragged-full .drag-knob svg {
+    fill: #fff!important
+}
+.is-dragged-complete .drag-knob .dashed-border {
+    height: 126px;
+    width: 126px;
+    opacity: 0
+}
+.is-dragged-complete .drag-knob .icon-glove-grab {
+    transition: opacity 300ms cubic-bezier(0.25, .25, .75, .75);
+    opacity: 0
+}
+.drag-end {
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    top: 0;
+    right: 0
+}
+.drag-end .dotted-border,
+.drag-end:before {
+    content: '';
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: 1px;
+    top: 1px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition-duration: 400ms
+}
+.drag-end .dotted-border {
+    height: 54px;
+    width: 54px;
+    border: 0
+}
+.drag-end .dotted-border svg {
+    height: 100%;
+    width: 100%;
+    fill: #fff;
+    transition-duration: 400ms
+}
+.is-vertical .drag-end {
+    top: auto;
+    bottom: 0
+}
+.is-vertical .drag-end:before {
+    visibility: hidden
+}
+.is-dragged-full .drag-end:before {
+    border-color: transparent
+}
+.is-dragged-full .drag-end .dotted-border {
+    height: 120px;
+    width: 120px
+}
+.is-dragged-full .drag-end .dotted-border svg {
+    fill: #00a599
+}
+.is-dragged-complete .drag-end .dotted-border {
+    height: 186px;
+    width: 186px;
+    opacity: 0
+}

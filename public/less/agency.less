@@ -142,12 +142,36 @@ h1, h2, h3, h4, h5, h6 {
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
         border: none;
+        text-align: center;
 	    .navbar-brand {
+            float: none;
 	        font-size: 2em;
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
+          img { display:inline;}
 	    }
+        .navbar-center {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            text-align: center;
+            margin: auto;
+            height:100%;
+        }
+      	.navbar-menu {
+		    text-align: center;
+        }
+        .navbar-nav {
+            margin-top: 20px;
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+        .navbar-collapse {
+            text-align: center;
+        }
 		.navbar-nav>.active>a {
 			border-radius: 3px;
 		}
@@ -156,13 +180,16 @@ h1, h2, h3, h4, h5, h6 {
     	background-color: @gray-darkest;
         padding: 10px 0;
 		.navbar-brand {
-	        font-size: 1.5em;
-	    }    
+	        display: none;
+	    }
+        .navbar-menu {
+            margin-top: 0;
+        }
 	}
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
+	background-image: url('../img/header-bg.png');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
@@ -722,3 +749,4 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @brand-primary;
 }
+
