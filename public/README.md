@@ -1,3 +1,9 @@
+# TODO:
+[1] For index.html, make background image scale to window size.
+[2] Add some bottom left stuffs like bbqcultures.com, including music switcher, language selection, and share to social tools.
+[3] Drag knob animation for dragging path.
+[4] Other pages.
+
 # [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
 
 [Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
