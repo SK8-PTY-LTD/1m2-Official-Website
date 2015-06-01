@@ -1,7 +1,11 @@
 # TODO:
+
 [1] For index.html, make background image scale to window size.
+
 [2] Add some bottom left stuffs like bbqcultures.com, including music switcher, language selection, and share to social tools.
+
 [3] Drag knob animation for dragging path.
+
 [4] Other pages.
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
