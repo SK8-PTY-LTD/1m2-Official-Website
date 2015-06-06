@@ -328,4 +328,16 @@ $( document ).ready(function() {
   var dragCC = new DragControlController($('.component-drag-control'));
   dragCC.init();
 
+  //********************* footer ********************
+  $(".share-facebook").on('click', function() {
+    window.location = "https://www.facebook.com/1m2creative";
+  });
+  
+  $(".button-mute").on('click', function() {
+    if ($(this).hasClass("is-muted")) {
+      $(this).removeClass("is-muted");
+    } else {
+      $(this).addClass("is-muted");
+    }
+  });
 });
