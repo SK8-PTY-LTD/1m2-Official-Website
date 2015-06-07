@@ -486,6 +486,7 @@ header {
     top: 50%;
     left: 50%;
     margin-top: -6px;
+    margin-left: 10px;
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -495,12 +496,12 @@ header {
 .drag-knob .icon-glove-grab,
 .drag-knob .icon-glove-grabbing {
     height: 3rem;
-    width: 3rem;
+    width: 4rem;
     margin-top: -2px;
     background-size: contain
 }
-.drag-knob .icon-glove-grab svg,
-.drag-knob .icon-glove-grabbing svg {
+.drag-knob .icon-glove-grab img,
+.drag-knob .icon-glove-grabbing img {
     height: 100%;
     width: 100%;
     fill: #fff
@@ -532,11 +533,11 @@ header {
     display: block
 }
 .is-dragged-full .drag-knob .dashed-border {
-    height: 106px!important;
-    width: 106px!important
+    height: 126px!important;
+    width: 126px!important
 }
 .is-dragged-full .drag-knob svg {
-    fill: #fff!important
+    fill: #00a599!important
 }
 .is-dragged-complete .drag-knob .dashed-border {
     height: 126px;
@@ -558,11 +559,8 @@ header {
 .drag-end:before {
     content: '';
     position: absolute;
-    height: 42px;
-    width: 42px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
     left: 1px;
     top: 1px;
     -webkit-transform: translate(-50%, -50%);
@@ -571,8 +569,8 @@ header {
     transition-duration: 400ms
 }
 .drag-end .dotted-border {
-    height: 54px;
-    width: 54px;
+    height: 100px;
+    width: 100px;
     border: 0
 }
 .drag-end .dotted-border svg {
@@ -588,8 +586,33 @@ header {
 .is-vertical .drag-end:before {
     visibility: hidden
 }
+.drag-end:before {
+    background-image: url("../img/head_empty.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+}
 .is-dragged-full .drag-end:before {
-    border-color: transparent
+    background-image: url("../img/head_full.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.head-says {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 30px;
+    top: -100px;
+    opacity: 0;
+    background-image: url("../img/head_says.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.is-dragged-full .head-says {
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 .is-dragged-full .drag-end .dotted-border {
     height: 120px;
@@ -602,6 +625,9 @@ header {
     height: 186px;
     width: 186px;
     opacity: 0
+}
+.is-dragged-full .icon {
+    opacity: 0; 
 }
 
 
