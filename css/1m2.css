@@ -1,15 +1,9 @@
 /*Validated styles*/
 
 .intro-img {
-    width: 400px;
-    margin: 160px auto 120px auto;
-}
-
-@media(min-height: 768px) {
-    .intro-image {
-        margin-top: 180px;
-        margin-bottom: 80px;
-    }
+    width: 75%;
+    max-width: 400px;
+    margin: 140px auto 80px auto;
 }
 
 .section-img {
