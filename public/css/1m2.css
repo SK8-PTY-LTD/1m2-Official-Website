@@ -1,8 +1,8 @@
 /*Validated styles*/
 
 .intro-img {
-    margin-top: 120px;
-    margin-bottom: 80px;
+    width: 400px;
+    margin: 160px auto 120px auto;
 }
 
 @media(min-height: 768px) {
