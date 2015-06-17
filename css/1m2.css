@@ -71,9 +71,11 @@ section#contact {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
 @media screen and (max-device-width: 800px) {
-body { background: #000 no-repeat center center fixed; }
+body { background: url('img/bg01.jpg') #000 no-repeat center center fixed; }
 #bgVideo { display: none; }
 }
 
