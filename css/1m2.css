@@ -1,9 +1,9 @@
 /*Validated styles*/
 
 .intro-img {
-    width: 75%;
-    max-width: 270px;
-    margin: 160px auto 140px auto;
+    width: 60%;
+    max-width: 200px;
+    margin: 300px auto 140px auto;
 }
 
 .section-img {
@@ -70,8 +70,6 @@ section#contact {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
 }
 
 /*.form-control-quote {
