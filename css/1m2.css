@@ -77,12 +77,20 @@ section#contact {
         max-width: 150px;
         margin: 170px auto 70px auto;
   }
+
+  #bgVideo{ 
+    display: none;
+  }
 }
 
 /* iphone5 */
 @media only screen and (min-device-height: 481px) and (max-device-height: 568px) and (orientation : portrait) { 
   .intro-img {
         margin: 220px auto 70px auto;
+  }
+
+  #bgVideo{ 
+    display: none;
   }
 }
 
@@ -93,6 +101,11 @@ section#contact {
         max-width: 200px;
         margin: 220px auto 100px auto;
   }
+
+  #bgVideo{ 
+    display: none;
+  }
+
 }
 
 /*.form-control-quote {
