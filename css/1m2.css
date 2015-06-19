@@ -80,6 +80,10 @@ section#contact {
   #bgVideo{ 
     display: none;
   }
+
+  .component-drag-control {
+    max-width: 120px !important;
+  }
 }
 
 /* iphone5 */
@@ -91,17 +95,26 @@ section#contact {
   #bgVideo{ 
     display: none;
   }
+
+  .component-drag-control {
+    max-width: 120px !important;
+  }
 }
 
 /* iphone6 & iphone6+ */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
   .intro-img {
-        margin: 160px auto 70px auto;
+        margin: 160px auto 90px auto;
   }
 
   #bgVideo{ 
     display: none;
   }
+
+  .component-drag-control {
+    max-width: 120px !important;
+  }
+
 
 }
 
