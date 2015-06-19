@@ -74,7 +74,7 @@ section#contact {
 @media only screen and (max-device-height: 480px) and (orientation : portrait) { 
   .intro-img {
         max-width: 150px;
-        margin: 170px auto 70px auto;
+        margin: 120px auto 70px auto;
   }
 
   #bgVideo{ 
@@ -85,7 +85,7 @@ section#contact {
 /* iphone5 */
 @media only screen and (min-device-height: 481px) and (max-device-height: 568px) and (orientation : portrait) { 
   .intro-img {
-        margin: 220px auto 70px auto;
+        margin: 160px auto 70px auto;
   }
 
   #bgVideo{ 
@@ -96,7 +96,7 @@ section#contact {
 /* iphone6 & iphone6+ */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
   .intro-img {
-        margin: 220px auto 70px auto;
+        margin: 160px auto 70px auto;
   }
 
   #bgVideo{ 
