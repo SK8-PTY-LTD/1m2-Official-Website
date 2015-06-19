@@ -73,7 +73,6 @@ section#contact {
 /* iphone4 */
 @media only screen and (max-device-height: 480px) and (orientation : portrait) { 
   .intro-img {
-        width: 100%;
         max-width: 150px;
         margin: 170px auto 70px auto;
   }
@@ -97,9 +96,7 @@ section#contact {
 /* iphone6 & iphone6+ */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
   .intro-img {
-        width: 100%;
-        max-width: 200px;
-        margin: 220px auto 100px auto;
+        margin: 220px auto 70px auto;
   }
 
   #bgVideo{ 
