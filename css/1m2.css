@@ -2,7 +2,7 @@
 .intro-img {
       width: 100%;
       max-width: 200px;
-      margin: 220px auto 100px auto;
+      margin: 300px auto 100px auto;
 }
 .section-img {
   margin-bottom: 60px;
@@ -70,6 +70,30 @@ section#contact {
   transform: translateX(-50%) translateY(-50%);
 }
 
+/* iphone4 */
+@media only screen and (max-device-height: 480px) and (orientation : portrait) { 
+  .intro-img {
+        width: 100%;
+        max-width: 150px;
+        margin: 170px auto 70px auto;
+  }
+}
+
+/* iphone5 */
+@media only screen and (min-device-height: 481px) and (max-device-height: 568px) and (orientation : portrait) { 
+  .intro-img {
+        margin: 220px auto 70px auto;
+  }
+}
+
+/* iphone6 & iphone6+ */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+  .intro-img {
+        width: 100%;
+        max-width: 200px;
+        margin: 220px auto 100px auto;
+  }
+}
 
 /*.form-control-quote {
     display: block;
